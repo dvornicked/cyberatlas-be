@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  db:
+    container_name: db
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgrespw
+  test-db:
+    container_name: test-db
+    image: postgres
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: postgrespw
