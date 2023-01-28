@@ -5,6 +5,7 @@ import { GenreModule } from './genre/genre.module'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { ConfigModule } from '@nestjs/config'
 import { CommonModule } from './common/common.module'
+import { GameModule } from './game/game.module'
 import * as process from 'process'
 
 @Module({
@@ -24,6 +25,7 @@ import * as process from 'process'
 		ConfigModule.forRoot(),
 		GenreModule,
 		CommonModule,
+		GameModule,
 	],
 	controllers: [AppController],
 	providers: [AppService],

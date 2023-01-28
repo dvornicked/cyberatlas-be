@@ -3,7 +3,7 @@ import { GenreService } from './genre.service'
 import { getRepositoryToken } from '@nestjs/typeorm'
 import { Genre } from './entities/genre.entity'
 import { NotFoundException } from '@nestjs/common'
-import { createMockRepository, MockRepository } from '../mocks/repositoty.mock'
+import { createMockRepository, MockRepository } from '../mocks/repository.mock'
 
 describe('GenreService', () => {
 	let service: GenreService

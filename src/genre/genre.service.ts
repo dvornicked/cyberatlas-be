@@ -4,7 +4,7 @@ import { CreateGenreDto } from './dto/create-genre.dto'
 import { UpdateGenreDto } from './dto/update-genre.dto'
 import { Repository } from 'typeorm'
 import { InjectRepository } from '@nestjs/typeorm'
-import { PaginationQueryDto } from './dto/pagination-query.dto'
+import { PaginationQueryDto } from '../common/dto/pagination-query.dto'
 
 @Injectable()
 export class GenreService {

@@ -11,7 +11,7 @@ import {
 import { GenreService } from './genre.service'
 import { CreateGenreDto } from './dto/create-genre.dto'
 import { UpdateGenreDto } from './dto/update-genre.dto'
-import { PaginationQueryDto } from './dto/pagination-query.dto'
+import { PaginationQueryDto } from '../common/dto/pagination-query.dto'
 import { ParseIntPipe } from '../common/pipes/parse-int.pipe'
 import { ApiTags } from '@nestjs/swagger'
 
